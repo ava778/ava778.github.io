@@ -21,3 +21,132 @@ custom-body, custom-page {
     max-width: 100%;
     max-height: 100%;
   }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    border-bottom: 3px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 110px;
+    width: auto;
+}
+
+.header-content {
+    text-align: right;
+}
+
+.header-content .links {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.header-content a {
+    color: #ffffff ;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.bi {
+    font-size: 24px; 
+    vertical-align: middle;
+}
+.header-content a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.slogan {
+    font-size: 16px;
+    color: #cccccc;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Center image */
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 330px); /* Adjust the height based on header and footer height */
+    background-color: #f7f7f7;
+}
+
+.center-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header-content {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header-content .links {
+        margin-bottom: 5px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.links {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ffcc00;
+}
+
+.footer-logo img {
+    max-height: 25px;
+    margin-bottom: 2px;
+}
